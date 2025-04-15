@@ -23,10 +23,3 @@ if fecha:
 # Mostrar resultado
 st.subheader("Datos filtrados")
 st.dataframe(df_filtrado)
-
-# Descargar Excel
-st.download_button(
-    "Descargar Excel",
-    df_filtrado.to_excel(index=False),
-    file_name="resultado_filtrado.xlsx"
-)
