@@ -18,7 +18,7 @@ if producto:
     df_filtrado = df_filtrado[df_filtrado["producto"].str.contains(producto, case=False)]
 
 if fecha:
-    df_filtrado = df_filtrado[df_filtrado["fecha"] >= pd.to_datetime(fecha)]
+    df_filtrado = df_filtrado[df_filtrado["fecha"] == pd.to_datetime(fecha)]
 
 # Mostrar resultado
 st.subheader("Datos filtrados")
